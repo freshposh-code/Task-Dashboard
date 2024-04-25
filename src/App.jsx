@@ -1,13 +1,18 @@
 import React from 'react'
-import { Sidebar, Topbar } from './components'
+import { Sidebar, Stats, Topbar } from './components'
 
 const App = () => {
   return (
-    <section className='flex m-2 items-baseline'>
+    <section className='flex items-start sm:m-2 m-0'>
       <div>
         <Sidebar />
       </div>
-      <Topbar />
+      <div className='flex flex-col sm:px-14 px-6 p-5'>
+        <Topbar />
+        <div>
+          <Stats />
+        </div>
+      </div>
     </section>
   )
 }

@@ -1,4 +1,4 @@
-import { AvTimer, Home, ModeComment, Wallet } from '@mui/icons-material';
+import { AvTimer, ChatRounded, Home, ModeComment, ShowChart, Wallet } from '@mui/icons-material';
 
 export const sidebarIcons = [
     {
@@ -24,5 +24,23 @@ export const topContent = [
     },
     {
         link: 'Help'
+    },
+]
+
+export const stats = [
+    {
+        icon: <ShowChart style={{ fontSize: '50px' }} />,
+        text: `VISITORS`,
+        number: `10,320`
+    },
+    {
+        icon: <ShowChart style={{ fontSize: '50px' }} />,
+        text: `CUSTOMERS`,
+        number: `4,628`
+    },
+    {
+        icon: <ShowChart style={{ fontSize: '50px' }} />,
+        text: `ORDERS`,
+        number: `2,980`
     },
 ]

@@ -21,3 +21,7 @@ body {
 .sideshadow {
     box-shadow: 0 0 12px rgb(126, 117, 255);
 }
+
+.stats {
+    box-shadow: 0 10px 15px rgba(138, 135, 185, 0.205);
+}

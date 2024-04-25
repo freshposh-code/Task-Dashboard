@@ -1,0 +1,25 @@
+import React, { useState } from 'react'
+import { stats } from '../../../Utils/Data'
+
+const Stats = () => {
+    const [activeItem, setActiveItem] = useState(2)
+
+    const handleClick = (index) => {
+        setActiveItem(index)
+    }
+    return (
+        <section className='py-14 flex-wrap gap-10 sm:flex hidden'>
+            {stats.map((item, index) => (
+                <div onClick={() => handleClick(index)} className={`flex gap-5 stats px-16 py-8 rounded-xl cursor-pointer duration-500 ${activeItem === index ? 'bg-[#ff0000ce] text-white' : ''}`} key={item.number}>
+                    <span>{item.icon}</span>
+                    <div>
+                        <p className='text-xs font-bold text-gray-300'>{item.text}</p>
+                        <h1 className='font-bold text-2xl'>{item.number}</h1>
+                    </div>
+                </div>
+            ))}
+        </section>
+    )
+}
+
+export default Stats
