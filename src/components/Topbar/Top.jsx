@@ -27,13 +27,13 @@ const Top = () => {
                         <h1>logo</h1>
                     </div>
 
-                    <div className='flex gap-3 items-center'>
+                    <div className='flex items-center gap-5'>
                         <div className='relative'>
                             <Notifications className='text-[#cfcfcf]' />
 
                             <div className="w-[5px] h-[5px] rounded-full bg-[#f00] absolute top-1 right-1" />
                         </div>
-                        <img className='object-cover sm:w-12 w-9 sm:h-12 h-9 rounded-full' src={profile} alt="profile" />
+                        <img className='object-cover sm:w-10 w-9 sm:h-10 h-9 rounded-xl' src={profile} alt="profile" />
                     </div>
                 </div>
             </div>

@@ -8,9 +8,9 @@ const Stats = () => {
         setActiveItem(index)
     }
     return (
-        <section className='py-14 flex-wrap gap-10 sm:flex hidden'>
+        <section className='mt-12 flex-wrap gap-11 md:flex hidden'>
             {stats.map((item, index) => (
-                <div onClick={() => handleClick(index)} className={`flex gap-5 stats px-16 py-8 rounded-xl cursor-pointer duration-500 ${activeItem === index ? 'bg-[#ff0000ce] text-white' : ''}`} key={item.number}>
+                <div key={item.text} onClick={() => handleClick(index)} className={`flex gap-5 stats px-16 py-8 rounded-xl cursor-pointer duration-500 ${activeItem === index ? 'bg-[#ff0000ce] text-white' : ''}`}>
                     <span>{item.icon}</span>
                     <div>
                         <p className='text-xs font-bold text-gray-300'>{item.text}</p>

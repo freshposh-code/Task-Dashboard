@@ -1,3 +1,4 @@
 import profile from './profile.jpg'
+import profileII from './profileII.jpg'
 
-export { profile }
+export { profile, profileII }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sidebar, Stats, Topbar } from './components'
+import { Chart, Sidebar, Stats, TimeTrack, Topbar, Transaction } from './components'
 
 const App = () => {
   return (
@@ -7,10 +7,19 @@ const App = () => {
       <div>
         <Sidebar />
       </div>
-      <div className='flex flex-col sm:px-14 px-6 p-5'>
-        <Topbar />
-        <div>
-          <Stats />
+      <div className="flex">
+        <div className='flex flex-col sm:px-14 px-6 p-5'>
+          <Topbar />
+          <div className="flex items-start gap-10">
+            <div>
+              <Stats />
+              <Chart />
+              <TimeTrack />
+            </div>
+            <div>
+              <Transaction />
+            </div>
+          </div>
         </div>
       </div>
     </section>

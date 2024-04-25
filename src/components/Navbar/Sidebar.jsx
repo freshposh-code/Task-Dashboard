@@ -11,7 +11,7 @@ const Sidebar = () => {
 
     return (
         <>
-            <section className='bg-[#2e25ae] rounded-tl-[40px] rounded-bl-[40px] max-w-fit p-5 h-screen md:flex hidden flex-col items-center gap-20'>
+            <section className='bg-[#2e25ae] rounded-tl-[40px] rounded-bl-[40px] max-w-fit p-5 h-[62.8rem] ss:flex hidden flex-col items-center gap-20'>
                 <div>
                     <span className='text-white'>LOGO</span>
                 </div>
@@ -30,9 +30,9 @@ const Sidebar = () => {
             {/* // MOBILE RESPONSIVENESS//VIEW */}
 
             <section>
-                <div className='absolute bottom-0 bg-[#2e25ae] p-3 w-screen md:hidden flex rounded-[40px]'>
+                <div className='absolute bottom-0 bg-[#2e25ae] p-3 w-screen ss:hidden flex rounded-[40px]'>
 
-                    <div className='flex'>
+                    <div className='flex w-screen justify-between sm:px-10 xm:px-7 px-2'>
                         {sidebarIcons.map((item, index) => (
                             <div key={item.icon}
                                 onClick={() => handleClick(index)}
