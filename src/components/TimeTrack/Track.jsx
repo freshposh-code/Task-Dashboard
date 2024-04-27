@@ -1,16 +1,26 @@
 import React from 'react'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { lineData, times } from '../../../Utils/Data'
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
+import { data, lineData, times } from '../../../Utils/Data'
 import { profile, profileII } from '../../assets';
 import { ChevronRight, PlayArrow } from '@mui/icons-material';
 
 const Track = () => {
     return (
-        <section className="mt-14 md:flex hidden gap-9">
+        <section className="mt-14 md:flex hidden xm:gap-10 gap-16">
             <div className='stats sm:w-[50%] w-full p-7 rounded-xl'>
-                <ResponsiveContainer width="100%" height="50%">
-                    <LineChart width={300} height={100} data={lineData}>
-                        <Line type="monotone" dataKey="pv" stroke="#ff0000ce" strokeWidth={2} />
+                <h1 className='font-bold text-xl'>Spent time</h1>
+                <ResponsiveContainer width="100%" height={210}>
+                    <LineChart data={data}>
+                        <XAxis dataKey="day" />
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <Tooltip />
+                        {/* Simple line chart */}
+                        <Line type="monotone" dataKey="time" stroke="#ff0000" />
+
+                        {/* Area chart with background color */}
+                        <AreaChart data={data}>
+                            <Area type="monotone" dataKey="time" stroke="#ff0000" fill="#ff0000ce" />
+                        </AreaChart>
                     </LineChart>
                 </ResponsiveContainer>
             </div>
@@ -32,7 +42,9 @@ const Track = () => {
                             <div>
                                 <span className='icon'>{item.icon}</span>
                             </div>
-                            <p className='font-semibold sm:text-base xm:text-xs text-[8px]'>{item.text}</p>
+                            <div>
+                                <p className='font-semibold sm:text-base xm:text-xs text-[8px]'>{item.text}</p>
+                            </div>
                         </div>
                     ))}
                 </div>

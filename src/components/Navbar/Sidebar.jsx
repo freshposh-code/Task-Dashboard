@@ -11,7 +11,7 @@ const Sidebar = () => {
 
     return (
         <>
-            <section className='bg-[#2e25ae] rounded-tl-[40px] rounded-bl-[40px] max-w-fit p-5 h-[62.8rem] ss:flex hidden flex-col items-center gap-20'>
+            <section className='ss:flex hidden bg-[#2e25ae] rounded-tl-[40px] rounded-bl-[40px] max-w-fit p-5 h-[62.8rem] flex-col items-center gap-[17rem]'>
                 <div>
                     <span className='text-white'>LOGO</span>
                 </div>
@@ -20,27 +20,10 @@ const Sidebar = () => {
                     {sidebarIcons.map((item, index) => (
                         <div key={item.icon}
                             onClick={() => handleClick(index)}
-                            className={`cursor-pointer duration-500 ${activeIndex === index ? 'bg-white text-[#ff0000ce] sideshadow' : 'text-[#7e75ff] left-0'} my-5 p-4 rounded-xl font-extrabold`}>
+                            className={`cursor-pointer duration-500 ${activeIndex === index ? 'bg-white text-[#ff0000ce] sideshadow absolute right-[86.6rem] top-[37%] transform -translate-y-[21px]' : 'text-[#7e75ff]'} my-10 p-4 rounded-xl font-extrabold`}>
                             <span>{item.icon}</span>
                         </div>
                     ))}
-                </div>
-            </section>
-
-            {/* // MOBILE RESPONSIVENESS//VIEW */}
-
-            <section>
-                <div className='absolute bottom-0 bg-[#2e25ae] p-3 w-screen ss:hidden flex rounded-[40px]'>
-
-                    <div className='flex w-screen justify-between sm:px-10 xm:px-7 px-2'>
-                        {sidebarIcons.map((item, index) => (
-                            <div key={item.icon}
-                                onClick={() => handleClick(index)}
-                                className={`cursor-pointer rounded-[15px] ${activeIndex === index ? 'bg-white text-[#ff0000ce] sideshadow' : 'text-[#7e75ff]'} p-3`}>
-                                <span>{item.icon}</span>
-                            </div>
-                        ))}
-                    </div>
                 </div>
             </section>
 
