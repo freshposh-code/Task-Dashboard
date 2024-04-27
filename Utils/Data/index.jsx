@@ -1,4 +1,4 @@
-import { AccessTimeFilled, AvTimer, ChatRounded, Home, LockClock, ModeComment, PlayArrow, ShowChart, Star, Wallet } from '@mui/icons-material';
+import { AccessTimeFilled, AvTimer, ChatRounded, CommentBankRounded, Home, Insights, LockClock, ModeComment, NetworkWifiOutlined, PlayArrow, ShoppingBag, ShowChart, Star, Wallet } from '@mui/icons-material';
 
 export const sidebarIcons = [
     {
@@ -20,7 +20,7 @@ export const topContent = [
         link: 'Feedback'
     },
     {
-        link: 'Contact'
+        link: 'Contacts'
     },
     {
         link: 'Help'
@@ -316,105 +316,91 @@ export const rangeData = [
 
 export const lineData = [
     {
-        name: 'Page A',
+        name: 'sun',
         uv: 4000,
         pv: 2400,
         amt: 2400,
     },
     {
-        name: 'Page B',
+        name: 'Mon',
         uv: 3000,
         pv: 1398,
         amt: 2210,
     },
     {
-        name: 'Page C',
+        name: 'Tue',
         uv: 2000,
         pv: 9800,
         amt: 2290,
     },
     {
-        name: 'Page D',
+        name: 'Wed',
         uv: 2780,
         pv: 3908,
         amt: 2000,
     },
     {
-        name: 'Page E',
+        name: 'Thu',
         uv: 1890,
         pv: 4800,
         amt: 2181,
     },
     {
-        name: 'Page F',
+        name: 'Fri',
         uv: 2390,
         pv: 3800,
         amt: 2500,
     },
     {
-        name: 'Page G',
-        uv: 3490,
-        pv: 4300,
-        amt: 2100,
+        name: 'Sat',
+        uv: 34,
+        pv: 4546,
+        amt: 3044,
     },
 ];
 
 export const data = [
-    {
-        name: 'Page A',
-        uv: 4000,
-        pv: 2400,
-        amt: 2400,
-    },
-    {
-        name: 'Page B',
-        uv: 3000,
-        pv: 1398,
-        amt: 2210,
-    },
-    {
-        name: 'Page C',
-        uv: 2000,
-        pv: 9800,
-        amt: 2290,
-    },
-    {
-        name: 'Page D',
-        uv: 2780,
-        pv: 3908,
-        amt: 2000,
-    },
-    {
-        name: 'Page E',
-        uv: 1890,
-        pv: 4800,
-        amt: 2181,
-    },
-    {
-        name: 'Page F',
-        uv: 2390,
-        pv: 3800,
-        amt: 2500,
-    },
-    {
-        name: 'Page G',
-        uv: 3490,
-        pv: 4300,
-        amt: 2100,
-    },
+    { day: 'Sun', time: '4:26' },
+    { day: 'Mon', time: '6:15' },
+    { day: 'Tue', time: '5:45' },
+    { day: 'Wed', time: '4:58' },
+    { day: 'Thu', time: '5:32' },
+    { day: 'Fri', time: '5:10' },
+    { day: 'Sat', time: '4:20' }
 ];
 
 export const times = [
     {
-        icon: <PlayArrow className='bg-[#2e25ae] rounded-full text-white' style={{ padding: '0.2rem' }} />,
+        icon: <PlayArrow className='bg-[#2e25ae] text-white' style={{ padding: '4px', fontSize: '1.7rem', borderRadius: '50%' }} />,
         text: `Video`
     },
     {
-        icon: <AccessTimeFilled className='bg-[#00a9f1ce] rounded-full text-white' style={{ color: '#00a9f1ce' }} />,
+        icon: <AccessTimeFilled className='text-[#00a9f1ce]' style={{ fontSize: '1.7rem', color: '#00a9f1ce' }} />,
         text: `15 mins`
     },
     {
-        icon: <Star className='text-[#ff0000ce] rounded-full text-white' style={{ color: 'red', }} />,
+        icon: <Star className='text-[#ff0000ce]' style={{ fontSize: '1.7rem', }} />,
         text: `12 likes`
+    },
+]
+
+export const transaction = [
+    {
+        icon: <Insights className='text-[#ff0000ce] bg-white' style={{ padding: '10px', fontSize: '2.7rem', borderRadius: '10px' }} />,
+        head: 'Taxi',
+        time: `01:21 PM`,
+        amount: `-$9,20`
+    },
+    {
+        icon: <ShoppingBag className='text-[#ff0000ce] bg-white' style={{ padding: '10px', fontSize: '2.7rem', borderRadius: '10px' }} />,
+        head: 'Shopping',
+        time: `11:15 PM`,
+        amount: `-$142,00`
+    },
+    {
+        icon: <NetworkWifiOutlined className='text-[#ff0000ce] bg-white' style={{ padding: '10px', fontSize: '2.7rem', borderRadius: '10px' }} />,
+        head: 'Netflix',
+        time: `01:21 PM`,
+        amount: `-$24,99`
     },
 ]
