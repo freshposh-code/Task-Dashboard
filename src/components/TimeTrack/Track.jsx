@@ -1,25 +1,27 @@
 import React from 'react'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
-import { data, lineData, times } from '../../../Utils/Data'
+import { areaData, lineData, times } from '../../../Utils/Data'
 import { profile, profileII } from '../../assets';
 import { ChevronRight, PlayArrow } from '@mui/icons-material';
 
 const Track = () => {
     return (
-        <section className="mt-14 md:flex hidden xm:gap-10 gap-16">
+        <section className="mt-14 md:flex hidden gap-9">
             <div className='stats sm:w-[50%] w-full p-7 rounded-xl'>
                 <h1 className='font-bold text-xl'>Spent time</h1>
-                <ResponsiveContainer width="100%" height={210}>
-                    <LineChart data={data}>
-                        <XAxis dataKey="day" />
-                        <CartesianGrid strokeDasharray="3 3" />
+                <ResponsiveContainer width="100%" height={215}>
+                    <LineChart data={lineData}>
+                        <XAxis dataKey="name" />
                         <Tooltip />
-                        {/* Simple line chart */}
-                        <Line type="monotone" dataKey="time" stroke="#ff0000" />
+                        <Line type="monotone" dataKey="pv" stroke="#ff0000ce" strokeWidth={3} activeDot={{ r: 8 }} />
 
-                        {/* Area chart with background color */}
-                        <AreaChart data={data}>
-                            <Area type="monotone" dataKey="time" stroke="#ff0000" fill="#ff0000ce" />
+                        {/* Render AreaChart as background */}
+                        <AreaChart data={areaData} style={{ position: 'absolute', top: 0, left: 0 }}>
+                            <CartesianGrid strokeDasharray="3 3" />
+                            <XAxis dataKey="name" />
+                            <YAxis />
+                            <Tooltip />
+                            <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
                         </AreaChart>
                     </LineChart>
                 </ResponsiveContainer>

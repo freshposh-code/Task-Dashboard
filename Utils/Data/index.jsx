@@ -369,6 +369,16 @@ export const data = [
     { day: 'Sat', time: '4:20' }
 ];
 
+export const areaData = [
+    { name: 'Sun', uv: 4.26 },
+    { name: 'Mon', uv: 6.15 },
+    { name: 'Tue', uv: 5.45 },
+    { name: 'Wed', uv: 4.58 },
+    { name: 'Thu', uv: 5.32 },
+    { name: 'Fri', uv: 5.10 },
+    { name: 'Sat', uv: 4.20 }
+];
+
 export const times = [
     {
         icon: <PlayArrow className='bg-[#2e25ae] text-white' style={{ padding: '4px', fontSize: '1.7rem', borderRadius: '50%' }} />,
