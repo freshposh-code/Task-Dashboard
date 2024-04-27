@@ -8,3 +8,6 @@ export { default as Transaction } from './Payment/Transaction'
 // MOBILE EXPORTS
 
 export { default as MobileNav } from './Navbar/MobileNav'
+export { default as SwitchTab } from './MobileSwitchTabs/MobileSectionI'
+export { default as SwitchTabII } from './MobileSwitchTabs/MobileSectionII'
+export { default as MobileStats } from './Revenue/MobileStats'
