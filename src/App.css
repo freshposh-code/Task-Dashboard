@@ -30,6 +30,15 @@ body {
     box-shadow: 0 0 20px rgba(60, 60, 60, 0.205);
 }
 
-/* //        <div style={{ fontSize: 12, marginTop: -5 }}>
-//        <p className='p-5 rounded-full innershadow'>66%</p>
-//    </div> */
+.icon {
+    color: yellow;
+    transition: transform 0.3s ease;
+}
+
+.icon.active {
+    color: green;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
