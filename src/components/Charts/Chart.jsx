@@ -9,7 +9,7 @@ const Charts = () => {
                 <h1 className='text-xl font-bold'>Statistics</h1>
 
                 {years.map((item) => (
-                    <div>
+                    <div key={item.year}>
                         <select className='px-5 py-3 rounded-[33px]'>
                             <option>{item.year}</option>
                             <option>{item.yearii}</option>
@@ -22,7 +22,7 @@ const Charts = () => {
 
             <div className='absolute left-7 mt-14'>
                 {barAmount.map((item) => (
-                    <div className='py-5'>
+                    <div className='py-5' key={item.amount}>
                         <h1 className='text-gray-300 font-semibold'>{item.amount}</h1>
                     </div>
                 ))}

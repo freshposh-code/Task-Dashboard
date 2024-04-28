@@ -22,12 +22,12 @@ const Top = () => {
                     ))}
                 </div>
 
-                <div className="flex items-center py-6">
+                <div className="relative flex items-center py-6">
                     <div className='md:hidden flex absolute left-0 px-5'>
                         <h1>logo</h1>
                     </div>
 
-                    <div className='flex items-center md:gap-5 gap-4 absolute md:right-6 right-0 sm:px-9 px-5'>
+                    <div className='flex items-center md:gap-5 gap-4 sm:px-9 px-5'>
                         <div className='relative'>
                             <Notifications className='text-gray-300' />
 

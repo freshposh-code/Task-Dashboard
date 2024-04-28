@@ -10,7 +10,7 @@ const MobileChart = () => {
                     <h1 className='text-xl font-bold'>Statistics</h1>
 
                     {years.map((item) => (
-                        <div>
+                        <div key={item.year}>
                             <select className='px-5 py-3 rounded-[33px]'>
                                 <option>{item.year}</option>
                                 <option>{item.yearii}</option>
@@ -23,7 +23,7 @@ const MobileChart = () => {
 
                 <div className='absolute left-7 mt-8 ss:hidden flex flex-col'>
                     {mobileBarAmount.map((item) => (
-                        <div className='py-4'>
+                        <div className='py-4' key={item.amount}>
                             <h1 className='text-gray-300 font-semibold xm:text-base text-xs'>{item.amount}</h1>
                         </div>
                     ))}

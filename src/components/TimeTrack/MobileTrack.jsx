@@ -25,7 +25,7 @@ const MobileTrack = () => {
                 {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 320"><path fill="#0537ff0f" fill-opacity="1" d="M0,256L20,261.3C40,267,80,277,120,266.7C160,256,200,224,240,197.3C280,171,320,149,360,165.3C400,181,440,235,480,234.7C520,235,560,181,600,186.7C640,192,680,256,720,256C760,256,800,192,840,149.3C880,107,920,85,960,64C1000,43,1040,21,1080,26.7C1120,32,1160,64,1200,74.7C1240,85,1280,75,1320,64C1360,53,1400,43,1420,37.3L1440,32L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg> */}
                 <div className='flex justify-center md:gap-6 gap-3 cursor-pointer py-7 text-center'>
                     {weekday.map((item, index) => (
-                        <div className='text-center' onClick={() => handleCurrentdate(index)}>
+                        <div className='text-center' onClick={() => handleCurrentdate(index)} key={item.day}>
                             <h1 className={`${activeDate === index ? "text-[#ff0000ce]" : "text-gray-300"} font-semibold`}>{item.day}</h1>
                         </div>
                     ))}

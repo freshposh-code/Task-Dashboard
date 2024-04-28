@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { stats } from '../../../Utils/Data'
-import { wavy } from '../../assets'
 
 const Stats = () => {
     const [activeItem, setActiveItem] = useState(2)

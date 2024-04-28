@@ -20,7 +20,7 @@ const Sidebar = () => {
                     {sidebarIcons.map((item, index) => (
                         <div key={item.icon}
                             onClick={() => handleClick(index)}
-                            className={`cursor-pointer duration-500 ${activeIndex === index ? 'bg-white text-[#ff0000ce] sideshadow absolute right-[86.6rem] top-[37%] transform -translate-y-[21px]' : 'text-[#7e75ff]'} my-10 p-4 rounded-xl font-extrabold`}>
+                            className={`cursor-pointer duration-500 ${activeIndex === index ? 'bg-white text-[#ff0000ce] sideshadow' : 'text-[#7e75ff]'} my-10 p-4 rounded-xl font-extrabold`}>
                             <span>{item.icon}</span>
                         </div>
                     ))}
