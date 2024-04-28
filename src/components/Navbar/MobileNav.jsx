@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { sidebarIcons } from '../../../Utils/Data'
 import { useSetState } from '../../Context/StateContext';
 
@@ -7,10 +7,10 @@ const MobileNav = () => {
     return (
         <>
             {/* // MOBILE RESPONSIVENESS//VIEW */}
-            <section className=''>
+            <section className='w-screen m-3'>
                 <div className='md:hidden flex bg-[#2e25ae] xm:p-3 p-2 items-end rounded-[40px]'>
 
-                    <div className='relative flex justify-between w-screen'>
+                    <div className='relative flex justify-around w-screen'>
                         {sidebarIcons.map((item, index) => (
                             <div key={item.icon}
                                 onClick={() => handleClick(index)}
