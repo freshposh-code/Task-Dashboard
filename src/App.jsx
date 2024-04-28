@@ -1,8 +1,7 @@
 import React from 'react'
 import { Chart, MobileNav, Sidebar, Stats, SwitchTab, SwitchTabII, TimeTrack, Topbar, Transaction } from './components'
-import { CreditCard, } from '@mui/icons-material';
-import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
 import { useSetState } from './Context/StateContext';
+import { CreditCardFilled, SignalFilled } from '@ant-design/icons';
 
 const App = () => {
   const { isSection1Active, handleSectionToggle } = useSetState();
@@ -36,9 +35,9 @@ const App = () => {
 
       <div className="flex-col justify-center text-center md:hidden flex mb-28">
         {/* Icons for toggling sections */}
-        <div className="flex space-x-4 my-8 justify-center">
-          <SignalCellularAltIcon onClick={handleSectionToggle} />
-          <CreditCard onClick={handleSectionToggle} />
+        <div className="flex space-x-12 my-8 justify-center w-fit m-auto rounded-[25px] Zhadow">
+          <SignalFilled style={{ fontSize: '1.5rem' }} className={`rounded-[10px] px-7 py-4 bg-[#00bbffd4] duration-500 ${isSection1Active ? 'text-white' : "bg-white text-gray-500"}`} onClick={handleSectionToggle} />
+          <CreditCardFilled style={{ fontSize: '1.5rem' }} className={`rounded-[10px] px-7 py-4 bg-[#00bbffd4] duration-500 ${isSection1Active ? "bg-white text-gray-500" : 'text-white'}`} onClick={handleSectionToggle} />
         </div>
 
         {/* Render section based on active state */}

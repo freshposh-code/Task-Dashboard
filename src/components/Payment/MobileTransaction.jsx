@@ -1,9 +1,7 @@
 import React from 'react'
-import { easeQuadInOut } from 'd3-ease';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
-import AnimatedProgressProvider from '../../../Utils/AnimateProvider';
-import { Add, DriveFileRenameOutline, MoreHoriz } from '@mui/icons-material';
+import { Add, MoreHoriz } from '@mui/icons-material';
 import { credit } from '../../assets';
 import { transaction } from '../../../Utils/Data';
 import ChangingProgressProvider from '../../../Utils/AnimateProvider/ProgressiveProvider';
