@@ -1,4 +1,4 @@
-import { AccessTimeFilled, AvTimer, ChatRounded, CommentBankRounded, Home, Insights, LockClock, ModeComment, NetworkWifiOutlined, PlayArrow, ShoppingBag, ShowChart, Star, Wallet } from '@mui/icons-material';
+import { AccessTimeFilled, AvTimer, ChatRounded, CommentBankRounded, Home, Insights, LockClock, ModeComment, NetworkWifiOutlined, PlayArrow, ShoppingBag, ShowChart, Star, TrendingDown, TrendingUp, Wallet } from '@mui/icons-material';
 
 export const sidebarIcons = [
     {
@@ -29,7 +29,7 @@ export const topContent = [
 
 export const stats = [
     {
-        icon: <ShowChart style={{ fontSize: '50px' }} />,
+        icon: <TrendingUp className='rotate-180' style={{ fontSize: '50px' }} />,
         text: `VISITORS`,
         number: `10,320`
     },
@@ -39,7 +39,7 @@ export const stats = [
         number: `4,628`
     },
     {
-        icon: <ShowChart style={{ fontSize: '50px' }} />,
+        icon: <TrendingDown style={{ fontSize: '50px' }} />,
         text: `ORDERS`,
         number: `2,980`
     },
@@ -48,13 +48,366 @@ export const stats = [
 export const rangeData = [
     {
         "day": "Nov",
-        "temperature": [
+        "amount": [
             15,
             4
         ]
     },
     {
         "day": "Nov",
+        "amount": [
+            15,
+            15
+        ]
+    },
+    {
+        "day": "Dec",
+        "amount": [
+            12,
+            5
+        ]
+    },
+    {
+        "day": "Dec",
+        "amount": [
+            3,
+            3
+        ]
+    },
+    {
+        "day": "dec",
+        "amount": [
+            3,
+            3
+        ]
+    },
+    {
+        "day": "",
+        "amount": [
+            3,
+            3
+        ]
+    },
+    {
+        "day": "",
+        "amount": [
+            16,
+            11
+        ]
+    },
+    {
+        "day": "Dec",
+        "amount": [
+            9,
+            9
+        ]
+    },
+    {
+        "day": "",
+        "amount": [
+            18,
+            9
+        ]
+    },
+    {
+        "day": "Jan",
+        "amount": [
+            9,
+            9
+        ]
+    },
+    {
+        "day": "",
+        "amount": [
+            12,
+            8
+        ]
+    },
+    {
+        "day": "",
+        "amount": [
+            12,
+            12
+        ]
+    },
+    {
+        "day": "Mar",
+        "amount": [
+            12,
+            12
+        ]
+    },
+    {
+        "day": "Mar",
+        "amount": [
+            12,
+            12
+        ]
+    },
+    {
+        "day": "Apr",
+        "amount": [
+            13,
+            9
+        ]
+    },
+    {
+        "day": "Apr",
+        "amount": [
+            9,
+            9
+        ]
+    },
+    {
+        "day": "May",
+        "amount": [
+            11,
+            7
+        ]
+    },
+    {
+        "day": "May",
+        "amount": [
+            7,
+            7
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            14,
+            5
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            5,
+            5
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            15,
+            10
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            10,
+            10
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            13,
+            9
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            9,
+            9
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            16,
+            9
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            9,
+            9
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            12,
+            6
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            6,
+            6
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            17,
+            12
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            10,
+            10
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            10,
+            10
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            10,
+            10
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            10,
+            10
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            17,
+            10
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            17,
+            17
+        ]
+    },
+    {
+        "day": "",
+        "amount": [
+            4,
+            10
+        ]
+    },
+    {
+        "day": "",
+        "amount": [
+            4,
+            4
+        ]
+    },
+    {
+        "day": "Jun",
+        "amount": [
+            10,
+            15
+        ]
+    },
+]
+
+export const monthDate = [
+    {
+        month: 'Nov'
+    },
+    {
+        month: 'Dec'
+    },
+    {
+        month: 'Jan'
+    },
+    {
+        month: 'Feb'
+    },
+    {
+        month: 'Mar'
+    },
+    {
+        month: 'Apr'
+    },
+    {
+        month: 'May'
+    },
+    {
+        month: 'Jun'
+    },
+]
+
+export const mobileMonthDate = [
+    {
+        month: 'Nov'
+    },
+    {
+        month: 'Dec'
+    },
+    {
+        month: 'Jan'
+    },
+    {
+        month: 'Feb'
+    },
+    {
+        month: 'Mar'
+    },
+]
+
+export const years = [
+    {
+        year: 'Year',
+        yearii: '2022',
+        yeariii: '2023',
+        yeariv: '2024',
+    },
+]
+
+export const barAmount = [
+    {
+        amount: '5k'
+    },
+    {
+        amount: '2k'
+    },
+    {
+        amount: '1k'
+    },
+    {
+        amount: '0'
+    }
+]
+
+export const mobileBarAmount = [
+    {
+        amount: '5k'
+    },
+    {
+        amount: '2k'
+    },
+    {
+        amount: '1k'
+    },
+    {
+        amount: '0'
+    }
+]
+
+export const MobileRangeData = [
+    {
+        "day": "Nov",
+        "temperature": [
+            15,
+            4
+        ]
+    },
+    {
+        "day": "",
         "temperature": [
             15,
             15
@@ -65,20 +418,6 @@ export const rangeData = [
         "temperature": [
             12,
             5
-        ]
-    },
-    {
-        "day": "Jan",
-        "temperature": [
-            3,
-            3
-        ]
-    },
-    {
-        "day": "Jan",
-        "temperature": [
-            3,
-            3
         ]
     },
     {
@@ -134,7 +473,7 @@ export const rangeData = [
         "day": "Mar",
         "temperature": [
             12,
-            12
+            6
         ]
     },
     {
@@ -145,171 +484,24 @@ export const rangeData = [
         ]
     },
     {
-        "day": "Apr",
-        "temperature": [
-            13,
-            9
-        ]
-    },
-    {
-        "day": "Apr",
-        "temperature": [
-            9,
-            9
-        ]
-    },
-    {
-        "day": "May",
-        "temperature": [
-            11,
-            7
-        ]
-    },
-    {
-        "day": "May",
+        "day": "Mar",
         "temperature": [
             7,
-            7
+            16
         ]
     },
     {
-        "day": "Jun",
-        "temperature": [
-            14,
-            5
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            5,
-            5
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            15,
-            10
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            10,
-            10
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            13,
-            9
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            9,
-            9
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            16,
-            9
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            9,
-            9
-        ]
-    },
-    {
-        "day": "Jun",
+        "day": "Mar",
         "temperature": [
             12,
-            6
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            6,
-            6
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            17,
             12
         ]
     },
     {
-        "day": "Jun",
+        "day": "Mar",
         "temperature": [
-            10,
-            10
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            10,
-            10
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            10,
-            10
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            10,
-            10
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            17,
-            10
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            17,
-            17
-        ]
-    },
-    {
-        "day": "",
-        "temperature": [
-            4,
-            10
-        ]
-    },
-    {
-        "day": "",
-        "temperature": [
-            4,
-            4
-        ]
-    },
-    {
-        "day": "Jun",
-        "temperature": [
-            10,
-            15
+            18,
+            6
         ]
     },
 ]
@@ -359,15 +551,29 @@ export const lineData = [
     },
 ];
 
-export const data = [
-    { day: 'Sun', time: '4:26' },
-    { day: 'Mon', time: '6:15' },
-    { day: 'Tue', time: '5:45' },
-    { day: 'Wed', time: '4:58' },
-    { day: 'Thu', time: '5:32' },
-    { day: 'Fri', time: '5:10' },
-    { day: 'Sat', time: '4:20' }
-];
+export const weekday = [
+    {
+        day: 'Sun'
+    },
+    {
+        day: 'Mon'
+    },
+    {
+        day: 'Tue'
+    },
+    {
+        day: 'Wed'
+    },
+    {
+        day: 'Thu'
+    },
+    {
+        day: 'Fri'
+    },
+    {
+        day: 'Sat'
+    },
+]
 
 export const areaData = [
     { name: 'Sun', uv: 4.26 },

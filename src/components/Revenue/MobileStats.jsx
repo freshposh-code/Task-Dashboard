@@ -8,13 +8,13 @@ const MobileStats = () => {
         setActiveItem(index)
     }
     return (
-        <section className='mt-3 grid grid-cols-2 justify-center gap-6 p-3'>
+        <section className='flex flex-wrap justify-center items-center mt-3 gap-6'>
             {stats.map((item, index) => (
-                <div key={item.text} onClick={() => handleClick(index)} className={`flex gap-5 stats px-16 py-8 rounded-xl cursor-pointer duration-500 flex-col-reverse ${activeItem === index ? 'bg-[#ff0000ce] text-white' : ''}`}>
-                    <span>{item.icon}</span>
+                <div key={item.text} onClick={() => handleClick(index)} className={`flex gap-5 stats px-10 py-10 rounded-xl cursor-pointer duration-500 flex-col-reverse ${activeItem === index ? 'bg-[#ff0000ce] text-white' : ''}`}>
+                    <span className={`${activeItem === index ? "text-white" : "text-[#2e25ae]"}`}>{item.icon}</span>
                     <div>
                         <p className='text-xs font-bold text-gray-300'>{item.text}</p>
-                        <h1 className='font-bold text-2xl'>{item.number}</h1>
+                        <h1 className={`font-extrabold text-2xl ${activeItem === index ? "text-white" : "text-[#2e25ae]"}`}>{item.number}</h1>
                     </div>
                 </div>
             ))}

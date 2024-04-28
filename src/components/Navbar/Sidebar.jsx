@@ -11,7 +11,7 @@ const Sidebar = () => {
 
     return (
         <>
-            <section className='ss:flex hidden bg-[#2e25ae] rounded-tl-[40px] rounded-bl-[40px] max-w-fit p-5 h-[62.8rem] flex-col items-center gap-[17rem]'>
+            <section className='md:flex hidden bg-[#2e25ae] rounded-tl-[40px] rounded-bl-[40px] max-w-fit p-5 h-[62.8rem] flex-col items-center gap-[17rem]'>
                 <div>
                     <span className='text-white'>LOGO</span>
                 </div>

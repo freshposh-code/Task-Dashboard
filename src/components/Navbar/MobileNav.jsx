@@ -10,14 +10,14 @@ const MobileNav = () => {
     return (
         <>
             {/* // MOBILE RESPONSIVENESS//VIEW */}
-            <section>
-                <div className='bg-[#2e25ae] xm:p-3 p-2 w-screen ss:hidden flex items-end rounded-[40px]'>
+            <section className='w-screen'>
+                <div className='md:hidden flex bg-[#2e25ae] xm:p-3 p-2 items-end rounded-[40px]'>
 
-                    <div className='flex w-screen justify-between sm:px-10 xm:px-7 px-2'>
+                    <div className='relative flex '>
                         {sidebarIcons.map((item, index) => (
                             <div key={item.icon}
                                 onClick={() => handleClick(index)}
-                                className={`cursor-pointer rounded-[15px] ${activeIndex === index ? 'bg-white text-[#ff0000ce] sideshadow' : 'text-[#7e75ff]'} p-3`}>
+                                className={`cursor-pointer rounded-[15px] ${activeIndex === index ? 'bg-white text-[#ff0000ce] sideshadow absolute left-[1rem] -top-[90%] transform -translate-x-[21px]' : 'text-[#7e75ff]'} p-3`}>
                                 <span>{item.icon}</span>
                             </div>
                         ))}

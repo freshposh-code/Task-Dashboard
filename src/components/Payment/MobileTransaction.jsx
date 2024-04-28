@@ -1,6 +1,6 @@
 import React from 'react'
 import { easeQuadInOut } from 'd3-ease';
-import { CircularProgressbar, CircularProgressbarWithChildren, buildStyles } from 'react-circular-progressbar';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import AnimatedProgressProvider from '../../../Utils/AnimateProvider';
 import { Add, DriveFileRenameOutline, MoreHoriz } from '@mui/icons-material';
@@ -8,19 +8,15 @@ import { credit } from '../../assets';
 import { transaction } from '../../../Utils/Data';
 import ChangingProgressProvider from '../../../Utils/AnimateProvider/ProgressiveProvider';
 
-const Transaction = () => {
+const MobileTransaction = () => {
     return (
-        <section className="md:flex hidden">
-            <div className='bg-[#0537ff0f] mt-12 rounded-2xl'>
+        <section className='m-5'>
+            <h1 className='font-bold xm:text-2xl text-xl text-center'>Total Sales</h1>
+            <div className='rounded-2xl'>
 
-                <span className='float-right pt-7 p-10 text-[#cfcfcf]'>
-                    <DriveFileRenameOutline className='text-[#0537ff30]' style={{ fontSize: '19px' }} />
-                </span>
-
-
-                <div className="relative pt-24">
-                    <div className='w-40 m-auto flex justify-center items-center font-bold'>
-                        <ChangingProgressProvider values={[0, 100]}>
+                <div className="relative pt-14">
+                    <div className='relativw w-40 m-auto font-bold'>
+                        <ChangingProgressProvider>
 
                             {percentage => (
                                 <CircularProgressbar
@@ -30,9 +26,13 @@ const Transaction = () => {
                                     background
                                     backgroundPadding={0}
                                     styles={buildStyles({
+                                        pathTransition: "none",
+
+                                        // rotation: 0.25,
 
                                         // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
                                         strokeLinecap: 'round',
+
 
                                         // Text size
                                         textSize: '20px',
@@ -47,12 +47,12 @@ const Transaction = () => {
                                 />
                             )}
                         </ChangingProgressProvider>
+                        <p className='bg-[#2e25ae] text-white font-semibold text-center rounded-lg absolute top-[2rem] -right-4 text-xs px-5 py-3 shadow-lg shadow-gray-400'>$10,600</p>
                     </div>
 
-                    <p className='bg-[#2e25ae] text-white font-semibold text-center rounded-lg absolute top-[5.3rem] sm:-right-5 -right-5 text-xs px-5 py-3 shadow-lg shadow-gray-400'>$10,600</p>
                 </div>
 
-                <div className="pt-9 px-6">
+                <div className="sm:p-8 xm:p-4 p-3">
                     <div>
                         <div className='flex justify-between'>
                             <p className='font-bold text-xl'>My card</p>
@@ -60,7 +60,7 @@ const Transaction = () => {
                         </div>
 
                         <div>
-                            <img className=' w-[500px] h-[268px] object-cover' src={credit} alt="creditcard" />
+                            <img className='xm:h-[300px] h-[200px] m-auto object-cover' src={credit} alt="creditcard" />
                         </div>
 
                         <div className='flex justify-between items-center'>
@@ -68,9 +68,9 @@ const Transaction = () => {
                             <Add className='text-[#fff] bg-[#ff0000ce]' style={{ padding: '8px', fontSize: '2.5rem', borderRadius: '10px' }} />
                         </div>
 
-                        <div>
+                        <div className='items-center mt-10'>
                             {transaction.map((item) => (
-                                <div className="flex gap-5 items-center py-5">
+                                <div className="flex gap-5 items-center mt-5">
                                     <div>
                                         <span>{item.icon}</span>
                                     </div>
@@ -93,4 +93,4 @@ const Transaction = () => {
     )
 }
 
-export default Transaction
+export default MobileTransaction;
