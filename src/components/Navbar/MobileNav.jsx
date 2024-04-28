@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import { sidebarIcons } from '../../../Utils/Data'
+import { useSetState } from '../../Context/StateContext';
 
 const MobileNav = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    const handleClick = (index) => {
-        setActiveIndex(index);
-    };
+    const { activeIndex, handleClick } = useSetState();
     return (
         <>
             {/* // MOBILE RESPONSIVENESS//VIEW */}
