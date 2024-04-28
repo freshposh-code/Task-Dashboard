@@ -19,26 +19,9 @@ body {
 }
 
 .sideshadow {
-    box-shadow: 0 0 12px rgb(126, 117, 255);
+    box-shadow: 0 0 12px rgba(126, 117, 255, 0.395);
 }
 
 .stats {
     box-shadow: 0 5px 20px rgba(138, 135, 185, 0.205);
-}
-
-.innershadow {
-    box-shadow: 0 0 20px rgba(60, 60, 60, 0.205);
-}
-
-.icon {
-    color: yellow;
-    transition: transform 0.3s ease;
-}
-
-.icon.active {
-    color: green;
-}
-
-.icon:hover {
-    transform: scale(1.1);
 }
