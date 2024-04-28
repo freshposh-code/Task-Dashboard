@@ -43,7 +43,7 @@ const App = () => {
         {/* Render section based on active state */}
 
         {isSection1Active ? <SwitchTab /> :
-          <div className='bg-[#cfd8ff2f]'>
+          <div className='bg-[#]'>
             <SwitchTabII />
           </div>
         }
