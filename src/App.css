@@ -18,8 +18,16 @@ body {
 
 }
 
+.switchhex {
+    color: #00bbffd4
+}
+
+.Zhadow {
+    box-shadow: 0 0 5px rgba(192, 192, 192, 0.568);
+}
+
 .sideshadow {
-    box-shadow: 0 0 12px rgba(126, 117, 255, 0.395);
+    box-shadow: 0 0 12px rgba(149, 145, 216, 0.568);
 }
 
 .stats {
