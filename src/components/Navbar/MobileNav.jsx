@@ -7,8 +7,8 @@ const MobileNav = () => {
     return (
         <>
             {/* // MOBILE RESPONSIVENESS//VIEW */}
-            <section className='w-screen m-3'>
-                <div className='md:hidden flex bg-[#2e25ae] xm:p-3 p-2 items-end rounded-[40px]'>
+            <section className='w-screen'>
+                <div className='md:hidden flex bg-[#2e25ae] xm:p-3 p-2 rounded-[40px]'>
 
                     <div className='relative flex justify-around w-screen'>
                         {sidebarIcons.map((item, index) => (
