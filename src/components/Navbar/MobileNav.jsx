@@ -7,7 +7,7 @@ const MobileNav = () => {
     return (
         <>
             {/* // MOBILE RESPONSIVENESS//VIEW */}
-            <section className='w-screen'>
+            <section className=''>
                 <div className='md:hidden flex bg-[#2e25ae] xm:p-3 p-2 items-end rounded-[40px]'>
 
                     <div className='relative flex justify-between w-screen'>
