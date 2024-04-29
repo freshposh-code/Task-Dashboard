@@ -10,7 +10,7 @@ const MobileNav = () => {
             <section className='w-screen'>
                 <div className='md:hidden flex bg-[#2e25ae] xm:p-3 p-2 rounded-[40px]'>
 
-                    <div className='relative flex justify-around w-screen px-10'>
+                    <div className='relative flex justify-around w-screen px-7'>
                         {sidebarIcons.map((item, index) => (
                             <div key={item.icon}
                                 onClick={() => handleClick(index)}
