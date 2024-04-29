@@ -7,7 +7,7 @@ const App = () => {
   const { isSection1Active, handleSectionToggle } = useSetState();
   return (
     <>
-      <section className={`flex items-start sm:m-2 m-0 ${isSection1Active ? "" : "bg-[#0537ff08]"}`}>
+      <section className={`flex items-start sm:p-2 p-0 ${isSection1Active ? "" : "bg-[#0537ff08]"}`}>
         <div className="bottom-0 z-20 fixed">
           <MobileNav />
         </div>
