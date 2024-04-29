@@ -24,7 +24,7 @@ const Top = () => {
 
                 <div className="flex items-center py-6">
                     <div className='md:hidden flex absolute left-0 px-5'>
-                        <h1>logo</h1>
+                        <h1 className='text-bold text-[#0537ff0f]'>logo</h1>
                     </div>
 
                     <div className='flex items-center md:gap-5 gap-4 sm:px-9 px-5 absolute right-0'>
