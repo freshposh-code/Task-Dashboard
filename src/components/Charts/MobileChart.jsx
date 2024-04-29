@@ -21,15 +21,8 @@ const MobileChart = () => {
                     ))}
                 </div>
 
-                <div className='absolute left-7 mt-8 ss:hidden flex flex-col'>
-                    {mobileBarAmount.map((item) => (
-                        <div className='py-4' key={item.amount}>
-                            <h1 className='text-gray-300 font-semibold xm:text-base text-xs'>{item.amount}</h1>
-                        </div>
-                    ))}
-                </div>
 
-                <div className='bg-[#0537ff0f] w-fit flex flex-col items-center justify-center m-auto rounded-2xl xm:p-5 p-0'>
+                <div className='relative bg-[#0537ff0f] w-fit flex flex-col items-center justify-center m-auto rounded-2xl xm:p-5 p-0'>
 
                     <BarChart
                         width={300}
@@ -52,6 +45,14 @@ const MobileChart = () => {
                         {mobileMonthDate.map((item) => (
                             <div>
                                 <h1 className='text-gray-300 font-semibold xm:text-base text-xs xm:mb-0 mb-'>{item.month}</h1>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className='absolute top-0 left-0 mt-8 ss:hidden flex flex-col p-3'>
+                        {mobileBarAmount.map((item) => (
+                            <div className='py-4' key={item.amount}>
+                                <h1 className='text-gray-300 font-semibold xm:text-base text-xs'>{item.amount}</h1>
                             </div>
                         ))}
                     </div>
