@@ -458,8 +458,8 @@ export const MobileRangeData = [
     {
         "day": "Mar",
         "temperature": [
-            10,
-            4
+            11,
+            6
         ]
     },
     {
