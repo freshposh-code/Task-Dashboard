@@ -33,7 +33,7 @@ const App = () => {
 
       {/* MOBILE VIEW / MOBILE SWITCH CASE */}
 
-      <div className="flex-col justify-center text-center md:hidden flex pb-28">
+      <div className="flex-col justify-center text-center md:hidden flex">
         {/* Icons for toggling sections */}
         <div className="flex space-x-12 my-8 justify-center w-fit m-auto rounded-[25px] shadow-lg">
           <SignalFilled style={{ fontSize: '1.5rem' }} className={`rounded-[10px] px-7 py-4 bg-[#00bbffd4] duration-500 ${isSection1Active ? 'text-white' : "bg-white text-gray-500"}`} onClick={handleSectionToggle} />
@@ -42,8 +42,12 @@ const App = () => {
 
         {/* Render section based on active state */}
 
-        {isSection1Active ? <SwitchTab /> :
-          <div className='bg-[#0537ff08]'>
+        {isSection1Active ?
+          <div className="pb-28">
+            <SwitchTab />
+          </div>
+          :
+          <div className='bg-[#0537ff08] pb-28'>
             <SwitchTabII />
           </div>
         }
