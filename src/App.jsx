@@ -37,7 +37,7 @@ const App = () => {
         {/* Icons for toggling sections */}
         <div className="flex my-3 justify-center w-fit m-auto rounded-[25px] shadow-lg">
           <SignalFilled className={`xm:text-[1.3rem] text-[1.1rem] rounded-[15px] px-9 py-4 bg-[#00bbffd4] duration-500 ${isSection1Active ? 'text-white' : "bg-white text-gray-500"}`} onClick={handleSectionToggle} />
-          <CreditCardFilled className={`xm:ext-[1.3rem] text-[1.1rem] rounded-[15px] px-9 py-4 bg-[#00bbffd4] duration-500 ${isSection1Active ? "bg-white text-gray-500" : 'text-white'}`} onClick={handleSectionToggle} />
+          <CreditCardFilled className={`xm:text-[1.3rem] text-[1.1rem] rounded-[15px] px-9 py-4 bg-[#00bbffd4] duration-500 ${isSection1Active ? "bg-white text-gray-500" : 'text-white'}`} onClick={handleSectionToggle} />
         </div>
 
         {/* Render section based on active state */}
