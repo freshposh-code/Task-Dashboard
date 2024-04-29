@@ -430,8 +430,8 @@ export const MobileRangeData = [
     {
         "day": "Jan",
         "temperature": [
-            16,
-            11
+            12,
+            8
         ]
     },
     {
@@ -444,8 +444,8 @@ export const MobileRangeData = [
     {
         "day": "Feb",
         "temperature": [
-            18,
-            9
+            7,
+            13
         ]
     },
     {
@@ -453,6 +453,20 @@ export const MobileRangeData = [
         "temperature": [
             9,
             9
+        ]
+    },
+    {
+        "day": "Mar",
+        "temperature": [
+            10,
+            4
+        ]
+    },
+    {
+        "day": "Mar",
+        "temperature": [
+            12,
+            12
         ]
     },
     {
@@ -472,7 +486,7 @@ export const MobileRangeData = [
     {
         "day": "Mar",
         "temperature": [
-            12,
+            10,
             6
         ]
     },
@@ -486,22 +500,8 @@ export const MobileRangeData = [
     {
         "day": "Mar",
         "temperature": [
-            7,
-            16
-        ]
-    },
-    {
-        "day": "Mar",
-        "temperature": [
-            12,
-            12
-        ]
-    },
-    {
-        "day": "Mar",
-        "temperature": [
-            18,
-            6
+            4,
+            13
         ]
     },
 ]
