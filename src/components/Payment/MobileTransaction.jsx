@@ -68,7 +68,7 @@ const MobileTransaction = () => {
 
                         <div className='items-center mt-10'>
                             {transaction.map((item) => (
-                                <div className="flex gap-5 items-center mt-5" key={item.head}>
+                                <div className="flex gap-5 items-center mt-6" key={item.head}>
                                     <div>
                                         <span>{item.icon}</span>
                                     </div>

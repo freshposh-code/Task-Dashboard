@@ -71,7 +71,7 @@ const Transaction = () => {
 
                         <div>
                             {transaction.map((item) => (
-                                <div className="flex gap-5 items-center py-5" key={item.head}>
+                                <div className="flex gap-5 items-center py-[22px]" key={item.head}>
                                     <div>
                                         <span>{item.icon}</span>
                                     </div>
