@@ -402,7 +402,7 @@ export const MobileRangeData = [
     {
         "day": "Nov",
         "temperature": [
-            15,
+            12,
             4
         ]
     },
@@ -445,7 +445,7 @@ export const MobileRangeData = [
         "day": "Feb",
         "temperature": [
             7,
-            13
+            14
         ]
     },
     {
