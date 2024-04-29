@@ -1,12 +1,12 @@
 import React from 'react'
-import { MobileRangeData, barAmount, mobileBarAmount, mobileMonthDate, monthDate, years } from '../../../Utils/Data'
-import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts'
+import { MobileRangeData, mobileBarAmount, mobileMonthDate, years } from '../../../Utils/Data'
+import { Bar, BarChart, Tooltip, } from 'recharts'
 
 const MobileChart = () => {
     return (
         <>
             <section>
-                <div className='relative mt-12 flex justify-between items-center m-5'>
+                <div className='mt-12 justify-between items-center m-5 md:hidden flex'>
                     <h1 className='text-xl font-bold'>Statistics</h1>
 
                     {years.map((item) => (
@@ -30,8 +30,6 @@ const MobileChart = () => {
                         data={MobileRangeData}
                         margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
                     >
-                        {/* <XAxis dataKey="day" /> */}
-                        {/* <YAxis tickCount={''} /> */}
                         <Tooltip />
                         <Bar
                             dataKey="temperature"
