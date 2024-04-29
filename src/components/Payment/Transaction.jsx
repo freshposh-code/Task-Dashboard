@@ -7,6 +7,7 @@ import { Add, DriveFileRenameOutline, MoreHoriz } from '@mui/icons-material';
 import { credit } from '../../assets';
 import { transaction } from '../../../Utils/Data';
 import ChangingProgressProvider from '../../../Utils/AnimateProvider/ProgressiveProvider';
+import { FileAddFilled, PlusOutlined } from '@ant-design/icons';
 
 const Transaction = () => {
     return (
@@ -65,7 +66,7 @@ const Transaction = () => {
 
                         <div className='flex justify-between items-center'>
                             <h1 className='font-bold text-xl'>Transaction</h1>
-                            <Add className='text-[#fff] bg-[#ff0000ce]' style={{ padding: '8px', fontSize: '2.5rem', borderRadius: '10px' }} />
+                            <PlusOutlined className='text-[#fff] bg-[#ff0000ce]' style={{ padding: '8px', fontSize: '14px', borderRadius: '10px' }} />
                         </div>
 
                         <div>
