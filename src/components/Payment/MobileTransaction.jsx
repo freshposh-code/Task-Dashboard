@@ -38,7 +38,7 @@ const MobileTransaction = () => {
                                         // Colors
                                         pathColor: `#2e25ae`,
                                         textColor: '#2e25ae',
-                                        trailColor: '#F7F7F7',
+                                        trailColor: '#fff',
                                         backgroundColor: '#fff',
 
                                     })}

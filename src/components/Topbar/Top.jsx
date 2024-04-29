@@ -5,7 +5,7 @@ import { profile } from '../../assets'
 
 const Top = () => {
     return (
-        <section className='flex items-center gap-12'>
+        <section className='items-center gap-12 md:flex'>
             <div className='relative md:flex hidden'>
                 <div className='flex items-center border bg-[#0537ff0f] rounded-[20px]'>
                     <Search className='absolute left-3 top-1/2 transform -translate-y-1/2 text-[#432eabc3]' />
@@ -37,8 +37,8 @@ const Top = () => {
                     </div>
                 </div>
             </div>
-
         </section>
+
     )
 }
 

@@ -7,7 +7,7 @@ const App = () => {
   const { isSection1Active, handleSectionToggle } = useSetState();
   return (
     <>
-      <section className='flex items-start sm:m-2 m-0'>
+      <section className={`flex items-start sm:m-2 m-0 ${isSection1Active ? "" : "bg-[#0537ff08]"}`}>
         <div className="bottom-0 z-20 fixed">
           <MobileNav />
         </div>
@@ -33,7 +33,7 @@ const App = () => {
 
       {/* MOBILE VIEW / MOBILE SWITCH CASE */}
 
-      <div className="flex-col justify-center text-center md:hidden flex">
+      <div className={`flex-col justify-center text-center md:hidden flex ${isSection1Active ? '' : 'bg-[#0537ff08]'}`}>
         {/* Icons for toggling sections */}
         <div className="flex space-x-12 my-3 justify-center w-fit m-auto rounded-[25px] shadow-lg">
           <SignalFilled style={{ fontSize: '1.5rem' }} className={`rounded-[15px] px-7 py-4 bg-[#00bbffd4] duration-500 ${isSection1Active ? 'text-white' : "bg-white text-gray-500"}`} onClick={handleSectionToggle} />
@@ -51,7 +51,7 @@ const App = () => {
             <SwitchTabII />
           </div>
         }
-      </div>
+      </div >
     </>
   )
 }
