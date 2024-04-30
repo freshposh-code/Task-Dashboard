@@ -3,16 +3,16 @@ import { Insights, ModeComment, NetworkWifiOutlined, PlayArrow, ShoppingBag, Sho
 
 export const sidebarIcons = [
     {
-        icon: <HomeFilled style={{ fontSize: '30px' }} />
+        icon: <HomeFilled style={{ fontSize: '25px' }} />
     },
     {
-        icon: <PieChartFilled style={{ fontSize: '30px' }} />
+        icon: <PieChartFilled style={{ fontSize: '25px' }} />
     },
     {
-        icon: <ModeComment style={{ fontSize: '30px' }} />
+        icon: <ModeComment style={{ fontSize: '25px' }} />
     },
     {
-        icon: <WalletFilled style={{ fontSize: '30px' }} />
+        icon: <WalletFilled style={{ fontSize: '25px' }} />
     },
 ];
 
