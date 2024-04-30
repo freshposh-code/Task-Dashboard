@@ -1,17 +1,18 @@
-import { AccessTimeFilled, AvTimer, ChatRounded, CommentBankRounded, Home, Insights, LockClock, ModeComment, NetworkWifiOutlined, PlayArrow, ShoppingBag, ShowChart, Star, TrendingDown, TrendingUp, Wallet } from '@mui/icons-material';
+import { ClockCircleFilled, HomeFilled, PieChartFilled, PlayCircleFilled, PlayCircleOutlined, StarFilled, WalletFilled } from '@ant-design/icons';
+import { Insights, ModeComment, NetworkWifiOutlined, PlayArrow, ShoppingBag, ShowChart, TrendingDown, TrendingUp } from '@mui/icons-material';
 
 export const sidebarIcons = [
     {
-        icon: <Home style={{ fontSize: '30px' }} />
+        icon: <HomeFilled style={{ fontSize: '30px' }} />
     },
     {
-        icon: <AvTimer style={{ fontSize: '30px' }} />
+        icon: <PieChartFilled style={{ fontSize: '30px' }} />
     },
     {
         icon: <ModeComment style={{ fontSize: '30px' }} />
     },
     {
-        icon: <Wallet style={{ fontSize: '30px' }} />
+        icon: <WalletFilled style={{ fontSize: '30px' }} />
     },
 ];
 
@@ -585,17 +586,17 @@ export const areaData = [
     { name: 'Sat', uv: 4.20 }
 ];
 
-export const times = [
+export const engagement = [
     {
-        icon: <PlayArrow className='bg-[#2e25ae] text-white' style={{ padding: '4px', fontSize: '1.7rem', borderRadius: '50%' }} />,
+        icon: <PlayCircleFilled className='text-[#2e25ae]' style={{ fontSize: '1.5rem' }} />,
         text: `Video`
     },
     {
-        icon: <AccessTimeFilled className='text-[#00a9f1ce]' style={{ fontSize: '1.7rem', color: '#00a9f1ce' }} />,
+        icon: <ClockCircleFilled className='text-[#00a9f1ce] text-[1.7rem]' style={{ fontSize: '1.5rem', color: '#00a9f1ce' }} />,
         text: `15 mins`
     },
     {
-        icon: <Star className='text-[#ff0000ce]' style={{ fontSize: '1.7rem', }} />,
+        icon: <StarFilled className='text-[#ff0000ce] text-[1.7rem]' style={{ fontSize: '1.5rem', }} />,
         text: `12 likes`
     },
 ]
