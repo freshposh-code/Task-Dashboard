@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts';
-import { areaData, lineData, monthDate, times, weekday } from '../../../Utils/Data'
+import { LineChart, Line, Tooltip, ResponsiveContainer } from 'recharts';
+import { engagement, lineData, weekday } from '../../../Utils/Data'
 import { profileII } from '../../assets';
 import { ChevronRight } from '@mui/icons-material';
 
@@ -43,7 +43,7 @@ const Track = () => {
                 </div>
                 <p className='font-bold py-4 sm:text-lg text-base'>How to properly manage your <br className="sm:flex hidden" /> personal budget?</p>
                 <div className='flex items-center py-2 sm:gap-10 gap-4'>
-                    {times.map((item) => (
+                    {engagement.map((item) => (
                         <div className='flex items-center gap-2' key={item.text}>
                             <div>
                                 <span className='icon'>{item.icon}</span>

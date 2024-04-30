@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
-import { areaData, lineData, times, weekday } from '../../../Utils/Data'
-import { profile, profileII } from '../../assets';
-import { ChevronRight, PlayArrow } from '@mui/icons-material';
+import { LineChart, Line, Tooltip, ResponsiveContainer, } from 'recharts';
+import { engagement, lineData, weekday } from '../../../Utils/Data'
+import { profileII } from '../../assets';
+import { ChevronRight } from '@mui/icons-material';
 
 const MobileTrack = () => {
     const [activeDate, setActiveDate] = useState(5);
@@ -44,10 +44,10 @@ const MobileTrack = () => {
                 </div>
                 <p className='text-start font-bold py-4 xm:text-lg text-sm'>How to properly manage your <br className="md:flex hidden" /> personal budget?</p>
                 <div className='flex items-center md:justify-center justify-normal py-2 sm:gap-10 gap-4'>
-                    {times.map((item) => (
+                    {engagement.map((item) => (
                         <div className='flex items-center gap-2' key={item.text}>
                             <div>
-                                <span className='icon'>{item.icon}</span>
+                                <span>{item.icon}</span>
                             </div>
                             <div>
                                 <p className='font-semibold sm:text-base xm:text-xs text-[8px]'>{item.text}</p>
