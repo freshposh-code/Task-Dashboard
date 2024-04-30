@@ -1,5 +1,5 @@
-import { ClockCircleFilled, HomeFilled, PieChartFilled, PlayCircleFilled, PlayCircleOutlined, StarFilled, WalletFilled } from '@ant-design/icons';
-import { Insights, ModeComment, NetworkWifiOutlined, PlayArrow, ShoppingBag, ShowChart, TrendingDown, TrendingUp } from '@mui/icons-material';
+import { ClockCircleFilled, HomeFilled, PieChartFilled, PlayCircleFilled, StarFilled, WalletFilled } from '@ant-design/icons';
+import { Insights, ModeComment, NetworkWifiOutlined, ShoppingBag, ShowChart, TrendingDown, TrendingUp } from '@mui/icons-material';
 
 export const sidebarIcons = [
     {
