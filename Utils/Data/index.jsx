@@ -1,5 +1,6 @@
 import { ClockCircleFilled, HomeFilled, PieChartFilled, PlayCircleFilled, StarFilled, WalletFilled } from '@ant-design/icons';
 import { Insights, ModeComment, NetworkWifiOutlined, ShoppingBag, ShowChart, TrendingDown, TrendingUp } from '@mui/icons-material';
+import { SiNetflix } from 'react-icons/si';
 
 export const sidebarIcons = [
     {
@@ -615,7 +616,7 @@ export const transaction = [
         amount: `-$142,00`
     },
     {
-        icon: <NetworkWifiOutlined className='text-[#ff0000ce] bg-white' style={{ padding: '10px', fontSize: '2.7rem', borderRadius: '10px' }} />,
+        icon: <SiNetflix className='text-[#ff0000ce] bg-white' style={{ padding: '10px', fontSize: '2.7rem', borderRadius: '10px' }} />,
         head: 'Netflix',
         time: `01:21 PM`,
         amount: `-$24,99`
